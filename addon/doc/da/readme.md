@@ -1,6 +1,6 @@
 # Focus Highlight (fremhæv fokus) #
 
-* Forfattere: Takuya Nishimoto
+* Authors: Takuya Nishimoto, Karl-Otto Rosenqvist
 * Download [stabil version][2]
 * Download [udviklingsversion][1]
 
@@ -19,8 +19,10 @@ Følgende farver bliver brugt af dette tilføjelsesprogram:
 * Blåt rektangel med tyk prikket linje for at indikere, at NVDA er i
   fokustilstand, d.v.s. at tastetryk bliver videregivet til kontrollen.
 
-Hvis du vil slå sporing af objekter fra, så afinstaller
-tilføjelsesprogrammet.
+To toggle object tracking, press NVDA+Alt+P. You can assign other gestures
+using the Input Gestures dialog.  Note that it works with NVDA 2018.3 or
+later.  Otherwise, you should disable or uninstall the addon itself for
+disabling object tracking.
 
 Når kategorien Fremhævelse af Fokus i NVDA-s indstillingspanel er
 tilgængelig, kan følgende indstillinger tilgås.
@@ -42,6 +44,20 @@ tilgængelig, kan følgende indstillinger tilgås.
 
 * Gendan standarder: Denne knap giver dig mulighed for at nulstille dine
   indstillinger til deres oprindelige standardindstillinger.
+
+## Changes for 6.3 ##
+
+* Nye og opdaterede oversættelser.
+* Fixed the issue that dash styles of focus (in browse mode) and navigator
+  object are not able to change.
+* Fixed the issue that 'Cancel' button of setting panel does not work after
+  'Restore defaults' button is pressed.
+
+## Changes for 6.2 ##
+
+* Nye og opdaterede oversættelser.
+* You can now turn object tracking on and off using NVDA+Alt+P. Karl-Otto
+  Rosenqvist contributed for this.
 
 ## Ændringer for 6.1 ##
 
@@ -132,9 +148,6 @@ tilgængelig, kan følgende indstillinger tilgås.
 * Rettet et problem med navigatorobjektet i Internet Explorer 10 og i Skype
   på Windows 8.
 * Første version.
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

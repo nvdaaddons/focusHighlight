@@ -1,6 +1,6 @@
 # Focus Highlight #
 
-* Autori: Takuya Nishimoto
+* Authors: Takuya Nishimoto, Karl-Otto Rosenqvist
 * Preuzmi[stabilnu verziju][2]
 * Preuzmi[razvojnu verziju][1]
 
@@ -19,7 +19,10 @@ Sledeće boje ovaj dodatak koristi:
 * Blue thick dotted line rectangle indicates NVDA is in focus mode, i.e.,
   key types are passed to the control.
 
-To disable object tracking, disable or uninstall the addon.
+To toggle object tracking, press NVDA+Alt+P. You can assign other gestures
+using the Input Gestures dialog.  Note that it works with NVDA 2018.3 or
+later.  Otherwise, you should disable or uninstall the addon itself for
+disabling object tracking.
 
 When Focus Highlight category of NVDA Settings dialog is available,
 following items can be used.
@@ -40,6 +43,20 @@ following items can be used.
 
 * Restore defaults: This button allows you to reset your settings to their
   original defaults.
+
+## Changes for 6.3 ##
+
+* Novi i ažurirani prevodi.
+* Fixed the issue that dash styles of focus (in browse mode) and navigator
+  object are not able to change.
+* Fixed the issue that 'Cancel' button of setting panel does not work after
+  'Restore defaults' button is pressed.
+
+## Changes for 6.2 ##
+
+* Novi i ažurirani prevodi.
+* You can now turn object tracking on and off using NVDA+Alt+P. Karl-Otto
+  Rosenqvist contributed for this.
 
 ## Changes for 6.1 ##
 
@@ -127,9 +144,6 @@ following items can be used.
 * U programu Internet Explorer 10 i Skype na Windowsu 8, popravljen problem
   sa navigacionim objektom.
 * Prva verzija
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

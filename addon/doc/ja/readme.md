@@ -1,6 +1,6 @@
 # Focus Highlight #
 
-* 作者: Takuya Nishimoto
+* 作者: 西本卓也,  Karl-Otto Rosenqvist
 * ダウンロード [安定版][2]
 * ダウンロード [開発版][1]
 
@@ -14,7 +14,7 @@
 * 赤い太い四角形は、NVDAがブラウズモードで、ナビゲータオブジェクトとフォーカスされたオブジェクトが重なっていることを示します。
 * 青色の太い点線の四角形は、NVDAがフォーカスモード、つまり、キー入力がコントロールに渡されることを示します。
 
-オブジェクトのハイライトを無効にするには、このアドオンを無効にするか、アンインストールしてください。
+オブジェクト追跡のオンオフには、NVDA+Alt+Pを押します。入力ジェスチャダイアログを使って、別のジェスチャーに設定することが出来ます。NVDA2018.3以降で動作します。それ以外の場合は、オブジェクト追跡をしないようにするには、アドオンそのものを無効にする、またはアンインストールします。
 
 NVDAの設定ダイアログのFocus Highlightカテゴリが利用可能な場合、次の項目が使用出来ます。
 
@@ -29,22 +29,31 @@ NVDAの設定ダイアログのFocus Highlightカテゴリが利用可能な場�
 
 * 初期状態に戻す: このボタンで設定を元の初期状態に戻せます。
 
+## 6.3 での変更点 ##
+
+* 新規の翻訳と翻訳の更新。
+* フォーカス（ブラウズモードで）とナビゲータオブジェクトの破線の形状が変更出来ない問題を修正しました。
+* 設定パネルのキャンセルボタンが、「初期状態に戻す」ボタンが押された後に動作しない問題を修正しました。
+
+## 6.2 での変更点 ##
+
+* 新規の翻訳と翻訳の更新。
+* オブジェクト追跡のオンオフを、NVDA+Alt+Pで出来るようになりました。これは、Karl-Otto Rosenqvistさんの貢献です。
+
 ## 6.1 での変更点 ##
 
 * 新規の翻訳と翻訳の更新。
-* NVDAの最新の開発版についての [the
-  issue](https://github.com/nvdajp/focusHighlight/issues/14) に対応しました。
+* NVDAの最新の開発版についての問題 (https://github.com/nvdajp/focusHighlight/issues/14)
+  に対応しました。
 * NVDA設定ダイアログでFocus Highlight カテゴリが利用出来るようになりました。NVDA 2018.3以降のみで動作します。
-* [Discussions regarding customizing
-  colors](https://github.com/nvdajp/focusHighlight/issues/3)
-* [Discussions regarding 'Make focus mode the
-  default'](https://github.com/nvdajp/focusHighlight/issues/13)
+* [色のカスタマイズについての議論](https://github.com/nvdajp/focusHighlight/issues/3)
+* [「フォーカスモードを初期状態にする」ことについての議論](https://github.com/nvdajp/focusHighlight/issues/13)
 
 ## 6.0 での変更点 ##
 
 * 新規の翻訳と翻訳の更新。
-* ブラウズモードについての [the
-  issue](https://github.com/nvdajp/focusHighlight/issues/13) に対応しました。
+* ブラウズモードについての問題 (https://github.com/nvdajp/focusHighlight/issues/13)
+  に対応しました。
 * このバージョンから、アプリケーションでNVDAのブラウズモードが利用可能でない場合、NVDAがそのアプリケーションで常にフォーカスモードであることを、赤い太い四角形で示すようになりました。
 * フォーカスモードを表す線の太さが半分になりました。
 
@@ -60,14 +69,14 @@ NVDAの設定ダイアログのFocus Highlightカテゴリが利用可能な場�
 ## 5.4 での変更点 ##
 
 * 新規の翻訳と翻訳の更新。
-* バージョン互換性についての [the
-  issue](https://github.com/nvdajp/focusHighlight/issues/11) に対応しました。
+* バージョン互換性についての問題 (https://github.com/nvdajp/focusHighlight/issues/11)
+  に対応しました。
 
 ## 5.3 での変更点 ##
 
 * 新規の翻訳と翻訳の更新。
-* Chromeブラウザとアプリケーションのスリープモードについての [the
-  issue](https://github.com/nvdajp/focusHighlight/issues/10) に対応しました。
+* Chromeブラウザとアプリケーションのスリープモードについての問題
+  (https://github.com/nvdajp/focusHighlight/issues/10) に対応しました。
 
 ## 5.2 での変更点 ##
 
@@ -90,7 +99,7 @@ NVDAの設定ダイアログのFocus Highlightカテゴリが利用可能な場�
 ## 3.0 での変更点 ##
 
 * 拡張コンボボックスでの不具合を修正。
-* Windows Task Managerでの不具合を修正。
+* Windows タスクマネージャでの不具合を修正。
 * フォーカスモードを表示する機能。
 
 ## 2.1 での変更点 ##
@@ -110,9 +119,6 @@ NVDAの設定ダイアログのFocus Highlightカテゴリが利用可能な場�
 
 * Windows 8 における Internet Explorer 10 と Skype のナビゲーターオブジェクトの不具合の修正。
 * 最初のバージョンです。
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

@@ -1,6 +1,6 @@
 # Focus Highlight #
 
-* Autores: Takuya Nishimoto
+* Autores: Takuya Nishimoto, Karl-Otto Rosenqvist
 * Descargar [versión estable][2]
 * Descarga [versión de desarrollo][1]
 
@@ -21,8 +21,11 @@ Los siguientes colores se utilizan con este complemento:
 * Un rectángulo de líneas punteadas gruesas azules indica que NVDA está en
   modo foco, es decir, las teclas se pasan al control.
 
-Para deshabilitar el seguimiento de objetos, desactiva o desinstala el
-complemento.
+Para conmutar el seguimiento de objetos, pulsa NVDA+alt+p. Puedes asignar
+otros gestos usando el diálogo Gestos de entrada. Ten en cuenta que esto
+sólo funciona con NVDA 2018.3 o posterior. En cualquier otro caso, debes
+desactivar o desinstalar el propio complemento para desactivar el
+seguimiento de objetos.
 
 Cuando se encuentre disponible la categoría Focus Highlight del diálogo de
 opciones de NVDA, podrán usarse los siguientes elementos.
@@ -46,6 +49,20 @@ opciones de NVDA, podrán usarse los siguientes elementos.
 
 * Restaurar por defecto: este botón te permite restablecer los ajustes a sus
   valores originales.
+
+## Cambios para 6.3 ##
+
+* Traducciones nuevas y actualizadas.
+* Corregido el problema que impedía cambiar el estilo de guiones del modo
+  foco (en modo exploración) y del navegador de objetos.
+* Corregido un problema por el que el botón 'Cancelar' del panel de opciones
+  no funcionaba tras pulsar el botón 'Restaurar valores por defecto'.
+
+## Cambios para 6.2 ##
+
+* Traducciones nuevas y actualizadas.
+* Ahora puedes activar o desactivar el seguimiento de objetos usando
+  NVDA+alt+p. Karl-Otto Rosenqvist contribuyó con ello.
 
 ## Cambios para 6.1 ##
 
@@ -140,9 +157,6 @@ opciones de NVDA, podrán usarse los siguientes elementos.
 * En Internet Explorer 10 y en Skype en Windows 8,se soluciona un problema
   con el navegador de objetos.
 * Versión inicial.
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

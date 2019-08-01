@@ -1,6 +1,6 @@
 # Focus Highlight #
 
-* Autores: Takuya Nishimoto
+* Autores: Takuya Nishimoto, Karl-Otto Rosenqvist
 * Descargar [versión estable][2]
 * Descarga [versión de desenvolvemento][1]
 
@@ -19,8 +19,10 @@ As seguintes cores utilízanse por este complemento:
 * Rectángulo groso azul de liñas punteadas indica que NVDA está en modo
   foco, p.ex., as pulsacións de teclas pásanse ao control.
 
-Para deshabilitar o seguemento de obxectos, deshabilita ou desinstala o
-complemento.
+Para alternar o seguimento do obxecto, preme NVDA+Alt+P. Podes asignar
+outros xestos utilizando o diálogo de Xestos de Entrada. Ten en conta que
+funciona con NVDA 2018.3 ou posterior. Doutro xeito, deberás desinstalar o
+complemento en sí mesmo para deshabilitar o seguimento do obxecto.
 
 Cando a categoría Focus Highlight do diálogo de Opcións de NVDA está
 dispoñible, pódense utilizar os seguintes elementos.
@@ -44,6 +46,20 @@ dispoñible, pódense utilizar os seguintes elementos.
 
 * Restaurar por defecto: Este botón permíteche restablecer os teus axustes
   aos seus orixinais por defecto.
+
+## Cambios para 6.3 ##
+
+* Traduccións novas e actualizadas.
+* Arranxado o problema polo que o estilo de guión do foco (en modo
+  exploración) e do navegador de obxectos non se podían cambiar.
+* Arranxado o problema polo que o botón 'Cancelar' do panel de opcións non
+  funcionaba tras premer o botón 'Restaurar por defecto'.
+
+## Cambios para 6.2 ##
+
+* Traduccións novas e actualizadas.
+* Agora podes activar e desactivar o seguimento do obxecto utilizando
+  NVDA+alt+P. Karl-Otto Rosenqvist contribuíu con isto.
 
 ## Cambios para 6.1 ##
 
@@ -132,9 +148,6 @@ dispoñible, pódense utilizar os seguintes elementos.
 * No Internet Explorer 10 e no Skype en Windows 8, arránxase un problema co
   navegador de obxectos.
 * Versión inicial.
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

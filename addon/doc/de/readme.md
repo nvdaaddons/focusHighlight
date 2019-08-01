@@ -1,6 +1,6 @@
 # Focus hervorheben #
 
-* Authoren: Takuya Nishimoto
+* Authoren: Takuya Nishimoto, Karl-Otto Rosenqvist
 * [Stabile Version herunterladen][2]
 * [Entwicklerversion herunterladen][1]
 
@@ -22,8 +22,11 @@ Die folgenden Farben werden von dieser Erweiterung verwendet:
   NVDA im Fokusmodus befindet, d. h., Schlüsseltypen werden an die Steuerung
   übergeben.
 
-Um das hervorheben von Objekten zu deaktivieren, deinstallieren Sie diese
-Erweiterung.
+Um die Objektverfolgung ein- oder auszuschalten, drücken Sie NVDA+Alt+P. Sie
+können über das Dialogfeld "Eingaben" andere Tastenbefehle dafür zuweisen.
+Beachten Sie, dass diese Funktion erst mit NVDA 2018.3 oder neuer
+funktioniert. Unter älteren NVDA-Versionen müssen Sie die Erweiterung selbst
+deaktivieren oder deinstallieren, um die Objektverfolgung auszuschalten.
 
 Wenn die Kategorie Fokus-Hervorhebung im Dialogfeld NVDA-Einstellungen
 verfügbar ist, können folgende Elemente verwendet werden.
@@ -49,6 +52,21 @@ verfügbar ist, können folgende Elemente verwendet werden.
   können Sie Ihre Einstellungen auf die ursprünglichen Standardwerte
   zurücksetzen.
 
+## Änderungen in 6.3 ##
+
+* Neue und aktualisierte Übersetzungen.
+* Es wurde ein Problem behoben, wobei sich die Strich-Formatierungen von
+  Fokus (im Lesemodus) und Navigatorobjekt nicht ändern konnten.
+* Es wurde ein Problem behoben, wobei die Schaltfläche "Abbrechen" im
+  Einstellungsfenster nicht funktionierte, nachdem die Schaltfläche "auf
+  Standard zurücksetzen" gedrückt wurde.
+
+## Änderungen in 6.2 ##
+
+* Neue und aktualisierte Übersetzungen.
+* Sie können die Objektverfolgung nun mit NVDA+Alt+P ein- und
+  ausschalten. Karl-Otto Rosenqvist hat dazu beigetragen.
+
 ## Änderungen in 6.1 ##
 
 * Neue und aktualisierte Übersetzungen.
@@ -73,32 +91,32 @@ verfügbar ist, können folgende Elemente verwendet werden.
 * Die Dicke der Linie, die den Fokusmodus darstellt, wurde auf die Hälfte
   reduziert.
 
-## Änderungen für 5.6 ##
+## Änderungen in 5.6 ##
 
 * Neue und aktualisierte Übersetzungen.
 * Behebt das Kompatibilitätsproblem mit dem NVDA-Snapshot alpha-16682.
 
-## Änderungen für 5.5 ##
+## Änderungen in 5.5 ##
 
 * Behebt das Problem mit NVDA 2018.4 und Firefox/Chrome-Internet-Browsern.
 
-## Änderungen für 5.4 ##
+## Änderungen in 5.4 ##
 
 * Neue und aktualisierte Übersetzungen.
 * Behebt den [Fehler](https://github.com/nvdajp/focusHighlight/issues/11)
   bzgl. der Versionskompatibilität.
 
-## Änderungen für 5.3 ##
+## Änderungen in 5.3 ##
 
 * Neue und aktualisierte Übersetzungen.
 * Behebt den [Fehler](https://github.com/nvdajp/focusHighlight/issues/10)
   bzgl. Chrome-Browser und Schlafmodus von Anwendungen.
 
-## Änderungen für 5.2 ##
+## Änderungen in 5.2 ##
 
 * Neue und aktualisierte Übersetzungen.
 
-## Änderungen für 5.1 ##
+## Änderungen in 5.1 ##
 
 * Die Protokollierungsstufe "debug"  wurde entfernt.
 
@@ -138,9 +156,6 @@ verfügbar ist, können folgende Elemente verwendet werden.
 * Problem mit dem Navigator-Objekt in Internet Explorer 10 und Skype für
   Windows 8 behoben.
 * Anfängliche Version.
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

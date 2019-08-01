@@ -1,6 +1,6 @@
 # Kohdistuksen korostus #
 
-* Tekijä: Takuya Nishimoto
+* Tekijät: Takuya Nishimoto ja Karl-Otto Rosenqvist
 * Lataa [vakaa versio][2]
 * Lataa [kehitysversio][1]
 
@@ -22,8 +22,11 @@ Seuraavia värejä käytetään:
   vuorovaikutustilassa, ts. näppäinpainallukset välitetään nykyiselle
   säätimelle.
 
-Poista objektin seuranta käytöstä poistamalla käytöstä tai poistamalla tämä
-lisäosa.
+Objektin seuranta otetaan käyttöön tai poistetaan käytöstä painamalla
+NVDA+Alt+P. Muita syötekomentoja voidaan liittää
+Syötekomennot-valintaikkunaa käyttäen. Huom: Toimii NVDA 2018.3:n tai
+uudemman kanssa. Muutoin objektin seurannan käytöstä poistamiseksi lisäosa
+on poistettava käytöstä tai poistettava sen asennus.
 
 Seuraavia asetuksia voidaan muuttaa, kun NVDA:n asetusvalintaikkunan
 Kohdistuksen korostus -kategoria on käytettävissä.
@@ -47,6 +50,20 @@ Kohdistuksen korostus -kategoria on käytettävissä.
 
 * Palauta oletukset: Tällä painikkeella voi palauttaa asetukset
   alkuperäisiin oletusarvoihinsa.
+
+## Muutokset versiossa 6.3 ##
+
+* Käännöksiä päivitetty ja lisätty.
+* Korjattu ongelma, jossa kohdistuksen ja navigointiobjektin viivatyylit
+  eivät muuttuneet selaustilassa.
+* Korjattu ongelma, jossa asetuspaneelin Peruuta-painike ei toiminut, kun
+  Palauta oletukset -painiketta oli painettu.
+
+## Muutokset versiossa 6.2 ##
+
+* Käännöksiä päivitetty ja lisätty.
+* Objektin seurannan voi nyt ottaa käyttöön ja poistaa käytöstä painamalla
+  NVDA+Alt+P. Tämä on Karl-Otto Rosenqvistin käsialaa.
 
 ## Muutokset versiossa 6.1 ##
 
@@ -136,9 +153,6 @@ Kohdistuksen korostus -kategoria on käytettävissä.
 * Korjattu navigointiobjektin ongelma Internet Explorer 10:ssä ja Skypessä
   Windows 8:aa käytettäessä.
 * Ensimmäinen versio.
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

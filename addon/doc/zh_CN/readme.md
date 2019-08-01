@@ -1,6 +1,6 @@
 # 焦点突出显示 Focus Highlight #
 
-* 作者: Takuya Nishimoto
+* Authors: Takuya Nishimoto, Karl-Otto Rosenqvist
 * 下载 [稳定版][2]
 * 下载 [开发板][1]
 
@@ -13,7 +13,10 @@
 * 红色粗线围成的矩形，表示导航器对象和焦点是重叠的。
 * 蓝色粗虚线围成的长方形，表示NVDA处于模式，即按键类型传递给控件。
 
-To disable object tracking, disable or uninstall the addon.
+To toggle object tracking, press NVDA+Alt+P. You can assign other gestures
+using the Input Gestures dialog.  Note that it works with NVDA 2018.3 or
+later.  Otherwise, you should disable or uninstall the addon itself for
+disabling object tracking.
 
 When Focus Highlight category of NVDA Settings dialog is available,
 following items can be used.
@@ -34,6 +37,20 @@ following items can be used.
 
 * Restore defaults: This button allows you to reset your settings to their
   original defaults.
+
+## Changes for 6.3 ##
+
+* 更新新的翻译。
+* Fixed the issue that dash styles of focus (in browse mode) and navigator
+  object are not able to change.
+* Fixed the issue that 'Cancel' button of setting panel does not work after
+  'Restore defaults' button is pressed.
+
+## Changes for 6.2 ##
+
+* 更新新的翻译。
+* You can now turn object tracking on and off using NVDA+Alt+P. Karl-Otto
+  Rosenqvist contributed for this.
 
 ## Changes for 6.1 ##
 
@@ -114,9 +131,6 @@ following items can be used.
 
 * 在Internet Explorer 10和Windows 8上的Skype中，修复了导航器对象的问题。
 * 发布初始版本。
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 

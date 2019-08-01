@@ -1,6 +1,6 @@
 # Focus Highlight #
 
-* 저자: Takuya Nishimoto
+* Authors: Takuya Nishimoto, Karl-Otto Rosenqvist
 * Download [안정 버전][2]
 * Download [개발 버전][1]
 
@@ -14,7 +14,10 @@
 * NVDA가 브라우즈 모드에 있을 때에는 navigator 객체에 포커스가 위치했을 때 굵은 빨간색 직사각형이 표시됩니다.
 * NVDA가 포커스 모드에 있을 때, 즉 키 입력이 조작 장치에 전달될 때에는 굵은 파란색 점선으로 직사각형이 표시됩니다.
 
-객체 추적을 중단하려면 애드온을 비활성화하거나 삭제하세요.
+To toggle object tracking, press NVDA+Alt+P. You can assign other gestures
+using the Input Gestures dialog.  Note that it works with NVDA 2018.3 or
+later.  Otherwise, you should disable or uninstall the addon itself for
+disabling object tracking.
 
 NVDA 설정 창에 대한 Focus Highlight 분류가 있을 경우, 다음 항목들을 사용할 수 있습니다.
 
@@ -34,6 +37,20 @@ NVDA 설정 창에 대한 Focus Highlight 분류가 있을 경우, 다음 항목
 
 * Restore defaults: This button allows you to reset your settings to their
   original defaults.
+
+## Changes for 6.3 ##
+
+* 새 언어 추가 및 번역 업데이트.
+* Fixed the issue that dash styles of focus (in browse mode) and navigator
+  object are not able to change.
+* Fixed the issue that 'Cancel' button of setting panel does not work after
+  'Restore defaults' button is pressed.
+
+## Changes for 6.2 ##
+
+* 새 언어 추가 및 번역 업데이트.
+* You can now turn object tracking on and off using NVDA+Alt+P. Karl-Otto
+  Rosenqvist contributed for this.
 
 ## 6.1에서의 변경사항 ##
 
@@ -120,9 +137,6 @@ NVDA 설정 창에 대한 Focus Highlight 분류가 있을 경우, 다음 항목
 
 * Windows 8에서 Internet Explorer 10 및 Skype navigator 객체의 버그 수정.
 * 첫 번째 버전.
-
-
-[[!tag dev stable]]
 
 [[!tag dev stable]]
 
