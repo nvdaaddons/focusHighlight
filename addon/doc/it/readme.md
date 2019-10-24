@@ -1,6 +1,6 @@
 # Focus Highlight #
 
-* Authors: Takuya Nishimoto, Karl-Otto Rosenqvist
+* Autori: Takuya Nishimoto, Karl-Otto Rosenqvist
 * Scarica la [versione stabile][2]
 * Scarica la [versione in sviluppo][1]
 
@@ -11,81 +11,90 @@ dell'oggetto che ha il focus.
 
 Sono utilizzati i colori seguenti:
 
-* Green thin dashed-dotted line rectangle shows NVDA is in browse mode, and
-  this is the navigator object.
-* Red thin rectangle shows NVDA is in browse mode, and this is the focused
-  object/control.
-* Red thick rectangle shows NVDA is in browse mode, and this is both the
-  navigator object and the focused object which are overlapping.
-* Blue thick dotted line rectangle indicates NVDA is in focus mode, i.e.,
-  key types are passed to the control.
+* Un rettangolo formato da sottili linee verdi tratteggiate e punteggiate,
+  per indicare che NVDA è in modalità navigazione e la posizione del
+  navigatore ad oggetti
+* Un Rettangolo sottile rosso indica che NVDA è in modalità navigazione,
+  questo è l'oggetto o il controllo  focalizzato.
+* Un Rettangolo spesso rosso, per indicare che ci si trova in modalità
+  navigazione e il navigatore di oggetti e l'oggetto mirato si
+  sovrappongono.
+* Un rettangolo spesso e blu con linee sottili e punteggiate sta ad indicare
+  che NVDA è in modalità focus, ad esempio ciò che scriviamo viene
+  visualizzato a schermo oppure il tasto premuto viene passato al controllo.
 
-To toggle object tracking, press NVDA+Alt+P. You can assign other gestures
-using the Input Gestures dialog.  Note that it works with NVDA 2018.3 or
-later.  Otherwise, you should disable or uninstall the addon itself for
-disabling object tracking.
+Per attivare il rilevamento degli oggetti, premere NVDA + Alt + P. Puoi
+assegnare altri gesti usando la finestra di dialogo Gesti e tasti di
+immissione. Funziona con NVDA 2018.3 o versioni successive. Altrimenti, è
+necessario disabilitare o disinstallare l'addon stesso per far sì che gli
+oggetti non vengano più tracciati.
 
-When Focus Highlight category of NVDA Settings dialog is available,
-following items can be used.
+è possibile utilizzare le voci seguenti se la categoria Focus Highlight è
+disponibile:
 
-* Make focus mode the default: This checkbox is enabled by default. When it
-  is unchecked, this add-on behaves same as version 5.6 or previous
-  versions, i.e., if browse mode is not available for an app, the focus is
-  shown using the thick red rectangle.
-* Focus in focus mode, Focus in browse mode, Navigator object: Each of these
-  groups contains Color, Thickness, and Style.
+* Rendi la modalità focus predefinita: questa casella di controllo è
+  abilitata per impostazione predefinita. Quando è deselezionato, questo
+  componente aggiuntivo si comporta come la versione 5.6 o versioni
+  precedenti, ovvero, se la modalità di navigazione non è disponibile per
+  un'app, lo stato attivo viene mostrato utilizzando il rettangolo rosso
+  spesso.
+* Focus in modalità focus, Focus in modalità navigazione, navigatore ad
+  oggetti Ognuno di questi gruppi contiene Colore, Spessore e Stile.
 
-    * Color: This edit field allows you to type the HTML color code, i.e.,
-      six-character hexadecimal number. For example, "ffffff" is white,
-      "ff0000" is red, and so on. Note that "000000" can not be used.
-    * Thickness: This edit field allows you to type the thickness of the
-      box. You can enter a value between 1 and 30.
-    * Style: The choices are Solid, Dash, Dot, Dash dot, and Dash dot-dot.
+    * Colore: Questo campo di testo consente di digitare il codice colore
+      HTML, ovvero un numero esadecimale di sei caratteri. Ad esempio,
+      "ffffff" è bianco, "ff0000" è rosso e così via. Si noti che "000000"
+      non può essere utilizzato.
+    * Spessore: digitare un valore compreso tra 1 e 30 per modificare lo
+      spessore della casella.
+    * Stile: le opzioni sono Solido, Tratteggiato, Punto, Punto tratteggiato
+      e Punto-punto.
 
-* Restore defaults: This button allows you to reset your settings to their
-  original defaults.
+* Ripristina impostazioni predefinite: questo pulsante consente di
+  ripristinare le impostazioni sui valori predefiniti originali.
 
-## Changes for 6.3 ##
+## Cambiamenti per la 6.3. ##
 
 * Nuove Traduzioni e aggiornamenti di quelle esistenti.
 * Fixed the issue that dash styles of focus (in browse mode) and navigator
   object are not able to change.
-* Fixed the issue that 'Cancel' button of setting panel does not work after
-  'Restore defaults' button is pressed.
+* Risolto il problema per cui il pulsante "Annulla" del pannello
+  impostazioni non funzionava dopo aver premuto il pulsante "Ripristina
+  impostazioni predefinite".
 
-## Changes for 6.2 ##
-
-* Nuove Traduzioni e aggiornamenti di quelle esistenti.
-* You can now turn object tracking on and off using NVDA+Alt+P. Karl-Otto
-  Rosenqvist contributed for this.
-
-## Changes for 6.1 ##
+## Cambiamenti per la 6.2. ##
 
 * Nuove Traduzioni e aggiornamenti di quelle esistenti.
-* Addresses [the issue](https://github.com/nvdajp/focusHighlight/issues/14)
-  with the latest development versions of NVDA.
-* Focus Highlight category of NVDA Settings dialog is now available. Note
-  that it works only with NVDA 2018.3 or later.
-* [Discussions regarding customizing
-  colors](https://github.com/nvdajp/focusHighlight/issues/3)
-* [Discussions regarding 'Make focus mode the
-  default'](https://github.com/nvdajp/focusHighlight/issues/13)
+* Ora puoi attivare e disattivare il tracciamento degli oggetti utilizzando
+  NVDA + Alt + P. ha contribuito per questo Karl-Otto Rosenqvist 
 
-## Changes for 6.0 ##
+## Cambiamenti per la 6.1 ##
 
 * Nuove Traduzioni e aggiornamenti di quelle esistenti.
-* Addresses [the issue](https://github.com/nvdajp/focusHighlight/issues/13)
-  regarding the browse mode.
-* Since this version, if the browse mode of NVDA is not available for an
-  application, it is always shown that NVDA is in focus mode for the
-  application, rather than using the red thick rectangle.
-* The thickness of the line representing the focus mode has been reduced to
-  half.
+* Risolto [il bug](https://github.com/nvdajp/focusHighlight/issues/14) with
+  the latest development versions of NVDA.
+* è ora disponibile la categoria Focus Highlight nelle impostazioni di
+  NVDA. Funziona dalla versione 2018.3 in poi
+* [Discussioni sulla personalizzazione dei
+  colori](https://github.com/nvdajp/focusHighlight/issues/3)
+* [discussioni su 'Rendere la modalità focus
+  predefinita'](https://github.com/nvdajp/focusHighlight/issues/13)
 
-## Changes for 5.6 ##
+## Cambiamenti per la 6.0. ##
 
 * Nuove Traduzioni e aggiornamenti di quelle esistenti.
-* Addresses the compatibility issue with NVDA snapshot alpha-16682.
+* Risolto [il bug](https://github.com/nvdajp/focusHighlight/issues/13)
+  inerente la modalità navigazione.
+* Da questa versione, se la modalità navigazione di NVDA non è disponibile
+  per un'applicazione, viene sempre mostrato che NVDA è in modalità focus
+  per l'applicazione, anziché utilizzare il rettangolo spesso rosso.
+* Lo spessore della linea che rappresenta la modalità focus è stato
+  dimezzato.
+
+## Cambiamenti per 5.6 ##
+
+* Nuove Traduzioni e aggiornamenti di quelle esistenti.
+* Sistemata la compatibilità con NVDA snapshot alpha-16682.
 
 ## Changes for 5.5 ##
 
