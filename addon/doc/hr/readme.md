@@ -1,100 +1,152 @@
-# oznaka fokusa / focus highlight #
+# Istakni fokus (Focus highlight) #
 
-* Autor: Takuya Nishimoto
-* Preuzmite [stabilnu inačicu][2]
-* preuzmite [Razvojnu inačicu][1]
+* Autori: Takuya Nishimoto, Karl-Otto Rosenqvist
+* Preuzmi [stabilnu verziju][2]
+* Preuzmi [razvojnu verziju][1]
 
-Ovaj dodatak omogućuje slabovidnim korisnicima, učiteljima bez problema sa
-vidom, ili razvojnim programerima praćenje objekta navigatora NVDA i
-fokusiranog objekta/kontrole uz pomoć nacrtanog obojenog pravokutnika.
+Ovaj NVDA dodatak omogućuje slabovidnim korisnicima, slijepim učiteljima ili
+razvojnim programerima praćenje navigacijskog objekta i fokusiranog
+objekta/kontrole pomoću obojenog pravokutnika.
 
-The following colors are used by this addon:
+Dodatak koristi slijedeće boje:
 
-* Green thin dashed-dotted line rectangle shows NVDA is in browse mode, and
-  this is the navigator object.
-* Red thin rectangle shows NVDA is in browse mode, and this is the focused
-  object/control.
-* Red thick rectangle shows NVDA is in browse mode, and this is both the
-  navigator object and the focused object which are overlapping.
-* Blue thick dotted line rectangle indicates NVDA is in focus mode, i.e.,
-  key types are passed to the control.
+* Pravokutnik sa zelenim tankim rubom, iscrtkan točkama i crticama – znači
+  da se NVDA nalazi u modusu čitanja. Pravokutnik označava navigacijski
+  objekt.
+* Prvokutnik sa crvenim tankim rubom – znači da se NVDA nalazi u modusu
+  čitanja. Pravokutnik označava fokusirani objekt/kontrolu.
+* Prvokutnik sa crvenim debelim rubom – znači da se NVDA nalazi u modusu
+  čitanja. Pravokutnik označava navigacijski objekt i objekta fokusa, koji
+  se preklapaju.
+* Prvokutnik s plavim iscrtkanim debelim rubom – znači da se NVDA nalazi u
+  modusu fokusa, tipkanje se prosljeđuje u kontrolu.
 
-Da biste onemogućili pračenje objekata, uklonite dodatak.
+Za uključivanje i isključivanje praćenja objekata, pritisni
+NVDA+Alt+P. Dodatku je moguće dodijeliti druge geste u dijaloškom okviru
+Ulazne geste. Napomena: dodatak radi s NVDA 2018.3 ili novijom verzijom. U
+ostalim slučajevima treba isključiti ili deinstalirati dodatak, kako bi se
+onemogućilo praćenja objekata.
 
-## Changes for 6.0 ##
+Kad je kategorija „Istakni fokus” dostupna u dijaloškom okviru za NVDA
+Postavke, moguće je koristiti sljedeće stavke.
 
-* Novi i ažurirani prijevodi.
-* Addresses [the issue](https://github.com/nvdajp/focusHighlight/issues/13)
-  regarding the browse mode.
-* Since this version, if the browse mode of NVDA is not available for an
-  application, it is always shown that NVDA is in focus mode for the
-  application, rather than using the red thick rectangle.
-* The thickness of the line representing the focus mode has been reduced to
-  half.
+* Odredi modus fokusa kao standardni: Potvrdni okvir je standardno
+  uključen. Kad se isključi, ovaj se dodatak ponaša kao verzija 5.6 ili
+  prethodne verzije, tj. ako za aplikaciju nije dostupan modus čitanja,
+  fokus se prikazuje pomoću debelog crvenog pravokutnika.
+* Fokus u modusu fokusa, Fokus u modusu čitanja, Navigacijski objekt – svaki
+  od njih sadrži boju, debljinu i stil.
 
-## Changes for 5.6 ##
+    * Boja: U ovom polju je moguće upisati HTML kod za boju kao
+      šesteroznamenkasti (heksadecimalni) broj. Npr, „ffffff” je bijela,
+      „ff0000” je crvena itd. Napomena: „000000” nije moguće koristiti.
+    * Debljina: U ovom polju je moguće odrediti debljinu ruba
+      pravokutnika. Moguće vrijednosti su 1 do 30.
+    * Stil: Moguće vrijednosti su neisprekidano, iscrtkano, točkasto,
+      točkasto sa crticom, dvotočkasto sa crticom.
 
-* Novi i ažurirani prijevodi.
-* Addresses the compatibility issue with NVDA snapshot alpha-16682.
+* Vrati na zadano: Ovim gumbom se postavke resetiraju na izvorne
+  vrijednosti.
 
-## Changes for 5.5 ##
-
-* Addresses the issue with NVDA 2018.4 and Firefox/Chrome web browsers.
-
-## Changes for 5.4 ##
-
-* Novi i ažurirani prijevodi.
-* Addresses [the issue](https://github.com/nvdajp/focusHighlight/issues/11)
-  regarding version compatibility.
-
-## Changes for 5.3 ##
-
-* Novi i ažurirani prijevodi.
-* Addresses [the issue](https://github.com/nvdajp/focusHighlight/issues/10)
-  regarding Chrome browser and application sleep mode.
-
-## Changes for 5.2 ##
+## Promjene u verziji 6.3 ##
 
 * Novi i ažurirani prijevodi.
+* Riješen je problem s iscrtkanim stilovima za fokus (u modusu čitanja) i
+  navigacijski objekt, koje nije bilo moguće promijeniti.
+* Riješen je problem s gumbom „Odustani” na ploči s postavkama, koji nakon
+  primjene gumba „Vrati na zadano” nije radio.
 
-## Changes for 5.1 ##
+## Promjene u verziji 6.2 ##
 
-* Removed debug log output.
+* Novi i ažurirani prijevodi.
+* Sad je moguće uključiti i isključiti praćenje objekata pomoću tipki
+  NVDA+Alt+P. Ovo je razvio Karl-Otto Rosenqvist.
 
-## Changes for 5.0 ##
+## Promjene u verziji 6.1 ##
 
-* Indicators of navigator object and focus mode were changed.
+* Novi i ažurirani prijevodi.
+* Rješava [problem](https://github.com/nvdajp/focusHighlight/issues/14) u
+  vezi sa zadnjom razvojnom verzijom NVDA čitača.
+* Kategorija „Istakni fokus” je sada dostupna u dijaloškom okviru za NVDA
+  Postavke. Radi samo s NVDA verzijom 2018.3 ili novijom.
+* [Diskusija o prilagođavanju
+  boja](https://github.com/nvdajp/focusHighlight/issues/3)
+* [Diskusija o „Odredi modus fokusa kao
+  standardni”](https://github.com/nvdajp/focusHighlight/issues/13)
+
+## Promjene u verziji 6.0 ##
+
+* Novi i ažurirani prijevodi.
+* Rješava [problem](https://github.com/nvdajp/focusHighlight/issues/13) u
+  vezi s modusom čitanja.
+* U ovoj verziji je uvedeno sljedeće: ako modus čitanja za NVDA nije
+  dostupan za aplikaciju, uvijek se pokazuje da je NVDA u modusu fokusiranja
+  za aplikaciju, umjesto da se koristi crveni debeli pravokutnik.
+* Debljina ruba koji predstavlja modus fokusiranja smanjena je na pola.
+
+## Promjene u verziji 5.6 ##
+
+* Novi i ažurirani prijevodi.
+* Rješava problem kompatibilnosti s NVDA snimkom alfa-16682.
+
+## Promjene u verziji 5.5 ##
+
+* Rješava problem s NVDA 2018.4 i Firefox/Chrome web preglednicima.
+
+## Promjene u verziji 5.4 ##
+
+* Novi i ažurirani prijevodi.
+* Rješava [problem](https://github.com/nvdajp/focusHighlight/issues/11) u
+  vezi s kompatibilnosti verzija.
+
+## Promjene u verziji 5.3 ##
+
+* Novi i ažurirani prijevodi.
+* Rješava [problem](https://github.com/nvdajp/focusHighlight/issues/10), u
+  vezi s Chrome preglednikom i aplikacijskom modusu mirovanja.
+
+## Promjene u verziji 5.2 ##
+
+* Novi i ažurirani prijevodi.
+
+## Promjene u verziji 5.1 ##
+
+* Uklonjen je rezultat zapisa uklanjanja grešaka.
+
+## Promjene u verziji 5.0 ##
+
+* Indikatori za objekt navigacije i modus fokusa su promijenjeni.
 * Podržano je više zaslona.
 * Sada se koristi GDI plus tehnologija za crtanje.
 
-## Changes for 4.0 ##
+## Promjene u verziji 4.0 ##
 
-* Sakrij pravokutnik ako je trenutna aplikacija u režimu spavanja.
+* Sakrij pravokutnik, ako je trenutna aplikacija u modusu mirovanja.
 
-## Changes for 3.0 ##
+## Promjene u verziji 3.0 ##
 
 * Ispravljena greška vezana uz prošireni odabirni okvir.
-* Fixed issue with Windows Task Manager.
-* Sposobnost da prepozna režim fokusiranja.
+* Ispravljena greška vezana uz Windows Task Manager.
+* Sposobnost da prepozna modus fokusiranja.
 
-## Changes for 2.1 ##
+## Promjene u verziji 2.1 ##
 
 * Novi i ažurirani prijevodi.
 
-## Izmjene u inačici 2.0 ##
+## Promjene u verziji 2.0 ##
 
-* Pomoč dodatka dostupna je u upravitelju dodataka.
+* Pomoć dodatka dostupna je u upravljaču dodataka.
 
-## izmjene u inačici 1.1 ##
+## Promjene u verziji 1.1 ##
 
-* Izmjenjen pravokutnik objekta navigatora u nazubljenu liniju.
+* Rub pravokutnika navigacijskog objekta je promijenjen u nazubljeni oblik.
 * Ispravljena greška kod ponovnog učitavanja dodataka.
 
-## Promjene u inačici  1.0 ##
+## Promjene u verziji 1.0 ##
 
 * U Internet Exploreru 10 i Skypeu na Windowsima 8, ispravljen je problem sa
   objektom navigatora.
-* Prva inačica.
+* Prva verzija.
 
 [[!tag dev stable]]
 
