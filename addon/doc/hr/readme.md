@@ -116,7 +116,7 @@ Postavke, moguće je koristiti sljedeće stavke.
 ## Promjene u verziji 5.0 ##
 
 * Indikatori za objekt navigacije i modus fokusa su promijenjeni.
-* Podržano je više zaslona.
+* Podrška za višestruke monitore.
 * Sada se koristi GDI plus tehnologija za crtanje.
 
 ## Promjene u verziji 4.0 ##
